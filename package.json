@@ -1,0 +1,24 @@
+{
+  "name": "vtex-search",
+  "version": "3.1.2",
+  "description": "VTEX Search",
+  "main": "index.js",
+  "scripts": {
+    "css-minify": "cleancss --level 1 --output dist/vtex-search.min.css src/vtex-search.css",
+    "js-minify": "uglifyjs --config-file ./uglifyjs.config.json --output dist/vtex-search.min.js src/vtex-search.js",
+    "build": "yarn run css-minify && yarn run js-minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pachecovit/vtex-search.git"
+  },
+  "keywords": [
+    "VtexSearch"
+  ],
+  "author": "Cleber Pacheco <hello@cleberpacheco.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-css-cli": "^4.1.6",
+    "uglify-js": "^3.0.27"
+  }
+}
